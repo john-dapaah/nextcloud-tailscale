@@ -1,14 +1,14 @@
-#ProjectI (Self-Hosted Cloud Server with Nextcloud)
+# ProjectI (Self-Hosted Cloud Server with Nextcloud)
 A step by step approach on how to setup a self-hosted cloud server with Nextcloud and access it remotely with TailScale
 
-#Requirements
+# Requirements
 Docker.
 Nextcloud apache image.
 TailScale.
 Web browser.
 Windows PowerShell/Command Prompt.
 
-#Installation
+# Installation
 1. Download and install docker.
 https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_location=module.
 2. Download and install TailScale.
@@ -31,15 +31,15 @@ https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe.
 3. To open a shell inside the container with root access, run: docker exec -it <container_id> /bin/bash.
 4. Navigate to /var/www/html/config .
 
-#edit nextcloud's config.php
+# Edit nextcloud's config.php
 1. Run: nano config.php .
 2. Add your TailScale address to the trusted_domains array section.
 3. Save file by pressing ctrl + O and hit enter. ctrl + x to exit.
 
-#restart docker 
+# Restart docker 
 1. Run: docker restart <container_id> .
 
-#Test your cloud by entering your TailScale address in your browser with  port:8080
+# Test your cloud by entering your TailScale address in your browser with  port:8080
 
 # Connect Remotely
 1. Download TailScale mobile.
